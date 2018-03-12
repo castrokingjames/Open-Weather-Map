@@ -1,0 +1,117 @@
+ext.app = [
+        id                  : 'com.docutools.openweathermap'
+]
+
+ext.versions = [
+        // App values
+        code                : 1,
+        name                : '1.0.0',
+        minSdk              : 16,
+        targetSdk           : 27,
+        compileSdk          : 27,
+        buildTools          : '27.0.2',
+
+        // Debug tools
+        leakCanary          : '1.5.4',
+
+        // Gradle plugins
+        androidGradlePlugin : '3.0.1',
+        jacoco              : '0.1.2',
+        retrolambda         : '3.7.0',
+        fabric              : '1.+',
+
+        // Libraries
+        dagger              : '2.13',
+        gson                : '2.8.2',
+        glide               : '4.3.1',
+        retrofit            : '2.3.0',
+        okhttp3Logging      : '3.8.0',
+        rxJava              : '2.1.6',
+        rxAndroid           : '2.0.1',
+        supportLibs         : '27.0.2',
+        constraintLayout    : '1.0.2',
+        adapterDelegates3   : '3.0.1',
+        materialDialogs     : '0.9.5.0',
+        mdp                 : '3.5.0',
+        slidingUpPanel      : '3.4.0',
+        crashlytics         : '2.8.0@aar',
+        stetho              : '1.5.0',
+
+        gms                 : '11.6.2',
+
+        arch                : '1.1.0',
+        archCompiler        : '1.1.0',
+        archExtensions      : '1.1.0',
+        room                : '1.0.0',
+        roomRxJava          : '1.0.0',
+
+        // Test libraries
+        espresso            : '2.2.2',
+        junit               : '4.12',
+        mockito             : '1.10.19',
+        supportTestRunner   : '0.5'
+]
+
+ext.annotationProcessors = [
+        daggerCompiler      : "com.google.dagger:dagger-compiler:$versions.dagger",
+        daggerProcessor     : "com.google.dagger:dagger-android-processor:$versions.dagger",
+        roomCompiler        : "android.arch.persistence.room:compiler:$versions.room",
+        archCompiler        : "android.arch.lifecycle:compiler:$versions.archCompiler",
+]
+
+ext.debugTools = [
+        leakCanary          : "com.squareup.leakcanary:leakcanary-android:$versions.leakCanary",
+        leakCanaryRelease   : "com.squareup.leakcanary:leakcanary-android-no-op:$versions.leakCanary",
+        leakCanaryTest      : "com.squareup.leakcanary:leakcanary-android-no-op:$versions.leakCanary"
+]
+
+ext.gradlePlugins = [
+        android             : "com.android.tools.build:gradle:$versions.androidGradlePlugin",
+        jacoco              : "com.dicedmelon.gradle:jacoco-android:$versions.jacoco",
+        retrolambda         : "me.tatarka:gradle-retrolambda:$versions.retrolambda",
+        fabric              : "io.fabric.tools:gradle:$versions.fabric"
+]
+
+ext.libraries = [
+        dagger              : "com.google.dagger:dagger-android:$versions.dagger",
+        daggerSupport       : "com.google.dagger:dagger-android-support:$versions.dagger",
+        gson                : "com.google.code.gson:gson:$versions.gson",
+        glide               : "com.github.bumptech.glide:glide:$versions.glide",
+        retrofit            : "com.squareup.retrofit2:retrofit:$versions.retrofit",
+        retrofitGsonAdapter : "com.squareup.retrofit2:converter-gson:$versions.retrofit",
+        retrofitRxJava      : "com.squareup.retrofit2:adapter-rxjava2:$versions.retrofit",
+        okhttp3Logging      : "com.squareup.okhttp3:logging-interceptor:$versions.okhttp3Logging",
+        rxJava              : "io.reactivex.rxjava2:rxjava:$versions.rxJava",
+        rxAndroid           : "io.reactivex.rxjava2:rxandroid:$versions.rxAndroid",
+        supportAnnotations  : "com.android.support:support-annotations:$versions.supportLibs",
+        supportAppCompat    : "com.android.support:appcompat-v7:$versions.supportLibs",
+        supportDesign       : "com.android.support:design:$versions.supportLibs",
+        supportRecyclerView : "com.android.support:recyclerview-v7:$versions.supportLibs",
+        supportCardView     : "com.android.support:cardview-v7:$versions.supportLibs",
+        constraintLayout    : "com.android.support.constraint:constraint-layout:$versions.constraintLayout",
+        adapterDelegates3   : "com.hannesdorfmann:adapterdelegates3:$versions.adapterDelegates3",
+        materialDialogs     : "com.afollestad.material-dialogs:core:$versions.materialDialogs",
+        mdp                 : "com.wdullaer:materialdatetimepicker:$versions.mdp",
+        slidingUpPanel      : "com.sothree.slidinguppanel:library:$versions.slidingUpPanel",
+        gmsMaps             : "com.google.android.gms:play-services-maps:$versions.gms",
+        gmsLocation         : "com.google.android.gms:play-services-location:$versions.gms",
+        gmsGCM              : "com.google.android.gms:play-services-gcm:$versions.gms",
+        gmsMapsUtils        : "com.google.maps.android:map-utils:1.0.0@aar",
+
+        arch                : "android.arch.lifecycle:runtime:$versions.arch",
+        archExtensions      : "android.arch.lifecycle:extensions:$versions.archExtensions",
+        room                : "android.arch.persistence.room:runtime:$versions.room",
+        roomRxJava          : "android.arch.persistence.room:rxjava2:$versions.roomRxJava",
+
+        crashlytics         : "com.crashlytics.sdk.android:crashlytics:$versions.crashlytics",
+        stetho              : "com.facebook.stetho:stetho:$versions.stetho"
+]
+
+ext.testLibraries = [
+        espresso            : "com.android.support.test.espresso:espresso-core:$versions.espresso",
+        espressoContrib     : "com.android.support.test.espresso:espresso-contrib:$versions.espresso",
+        mockito             : "org.mockito:mockito-core:$versions.mockito",
+        junit               : "junit:junit:$versions.junit",
+        supportTestRunner   : "com.android.support.test:runner:$versions.supportTestRunner",
+        supportTestRules    : "com.android.support.test:rules:$versions.supportTestRunner"
+]

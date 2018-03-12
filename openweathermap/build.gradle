@@ -1,0 +1,53 @@
+apply plugin: 'com.android.application'
+apply from: '../dependencies/quality/quality.gradle'
+
+android {
+    compileSdkVersion versions.compileSdk
+    buildToolsVersion versions.buildTools
+
+    defaultConfig {
+        applicationId app.id
+        versionCode versions.code
+        versionName versions.name
+        minSdkVersion versions.minSdk
+        targetSdkVersion versions.targetSdk
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+
+    buildTypes {
+
+        debug {
+            testCoverageEnabled false
+            useProguard false
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    configurations.all {
+        resolutionStrategy.force 'com.google.code.findbugs:jsr305:1.3.9'
+    }
+
+    lintOptions {
+        warningsAsErrors true
+        abortOnError true // Fail early.
+
+        disable 'GoogleAppIndexingWarning' // App does not have deep linking.
+        disable 'InvalidPackage' // Okio references java.nio that does not presented in Android SDK.
+    }
+}
+
+dependencies {
+    implementation project(':presentation')
+}

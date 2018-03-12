@@ -1,0 +1,13 @@
+<resources>
+
+    <style name="CityText" parent="TextAppearance.AppCompat.Display3" />
+
+    <style name="CityWeather" parent="TextAppearance.AppCompat.Display1" />
+
+    <style name="CityWeatherDegree" parent="TextAppearance.AppCompat.Display2" />
+
+    <style name="DayTimeCaptionText" parent="TextAppearance.AppCompat.Title" />
+
+    <style name="DayTimeText" parent="TextAppearance.AppCompat.Display1" />
+
+</resources>

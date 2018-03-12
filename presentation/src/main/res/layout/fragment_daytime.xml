@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardBackgroundColor="@color/colorPrimary"
+    app:cardCornerRadius="@dimen/small"
+    app:cardElevation="@dimen/extra_small"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/large"
+        android:layout_marginLeft="@dimen/standard"
+        android:layout_marginRight="@dimen/standard"
+        android:layout_marginTop="@dimen/large">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/daytime"
+                android:layout_height="@dimen/daytime"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_sunrise_black_75dp"
+                android:tint="@android:color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/sunrise"
+                android:textAppearance="@style/DayTimeCaptionText"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/sunrise_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="07:07 AM"
+                android:textAppearance="@style/DayTimeText"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/daytime"
+                android:layout_height="@dimen/daytime"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_sunset_black_75dp"
+                android:tint="@android:color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/sunset"
+                android:textAppearance="@style/DayTimeCaptionText"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/sunset_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="07:07 AM"
+                android:textAppearance="@style/DayTimeText"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
