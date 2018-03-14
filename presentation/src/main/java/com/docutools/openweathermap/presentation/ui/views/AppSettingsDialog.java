@@ -15,7 +15,7 @@ import android.support.v4.app.Fragment;
 import android.support.v7.app.AlertDialog;
 import android.text.TextUtils;
 
-import com.docutools.canvass.data.lang.Permissions;
+import com.docutools.openweathermap.data.lang.Permissions;
 import com.docutools.openweathermap.presentation.R;
 import com.docutools.openweathermap.presentation.ui.activities.AppSettingsDialogHolderActivity;
 

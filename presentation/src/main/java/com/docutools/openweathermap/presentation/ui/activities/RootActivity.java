@@ -18,8 +18,8 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.docutools.canvass.data.lang.PermissionRequiredException;
-import com.docutools.canvass.data.lang.Permissions;
+import com.docutools.openweathermap.data.lang.PermissionRequiredException;
+import com.docutools.openweathermap.data.lang.Permissions;
 import com.docutools.openweathermap.domain.entities.Place;
 import com.docutools.openweathermap.domain.entities.Weather;
 import com.docutools.openweathermap.presentation.R;

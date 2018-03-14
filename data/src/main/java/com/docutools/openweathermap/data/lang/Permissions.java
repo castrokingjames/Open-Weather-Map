@@ -1,4 +1,4 @@
-package com.docutools.canvass.data.lang;
+package com.docutools.openweathermap.data.lang;
 
 import android.app.Activity;
 import android.content.Context;

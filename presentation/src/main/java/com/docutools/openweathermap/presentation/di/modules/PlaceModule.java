@@ -2,7 +2,7 @@ package com.docutools.openweathermap.presentation.di.modules;
 
 import android.content.Context;
 
-import com.docutools.canvass.data.managers.PlaceManager;
+import com.docutools.openweathermap.data.managers.PlaceManager;
 import com.docutools.openweathermap.domain.repositories.PlaceRepository;
 
 import dagger.Module;

@@ -1,6 +1,6 @@
-package com.docutools.canvass.data.clients.network.services;
+package com.docutools.openweathermap.data.clients.network.services;
 
-import com.docutools.canvass.data.clients.network.responses.GetWeatherResponse;
+import com.docutools.openweathermap.data.clients.network.responses.GetWeatherResponse;
 
 import io.reactivex.Observable;
 import retrofit2.http.GET;

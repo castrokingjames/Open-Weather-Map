@@ -1,8 +1,8 @@
-package com.docutools.canvass.data.managers;
+package com.docutools.openweathermap.data.managers;
 
-import com.docutools.canvass.data.clients.network.responses.GetWeatherResponse;
-import com.docutools.canvass.data.clients.network.services.WeatherService;
-import com.docutools.canvass.data.clients.preference.Preference;
+import com.docutools.openweathermap.data.clients.network.responses.GetWeatherResponse;
+import com.docutools.openweathermap.data.clients.network.services.WeatherService;
+import com.docutools.openweathermap.data.clients.preference.Preference;
 import com.docutools.openweathermap.data.BuildConfig;
 import com.docutools.openweathermap.domain.entities.Place;
 import com.docutools.openweathermap.domain.entities.Weather;
@@ -14,7 +14,6 @@ import com.docutools.openweathermap.domain.utils.Calendars;
 import java.net.UnknownHostException;
 
 import io.reactivex.Observable;
-import io.reactivex.ObservableSource;
 import io.reactivex.functions.Function;
 
 public class WeatherManager

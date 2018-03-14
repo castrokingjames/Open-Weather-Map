@@ -1,7 +1,7 @@
 package com.docutools.openweathermap.presentation.di.modules;
 
-import com.docutools.canvass.data.clients.network.OpenWeatherMapWebService;
-import com.docutools.canvass.data.clients.network.services.WeatherService;
+import com.docutools.openweathermap.data.clients.network.OpenWeatherMapWebService;
+import com.docutools.openweathermap.data.clients.network.services.WeatherService;
 import com.docutools.openweathermap.presentation.BuildConfig;
 import com.google.gson.Gson;
 

@@ -1,11 +1,11 @@
-package com.docutools.canvass.data.managers;
+package com.docutools.openweathermap.data.managers;
 
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.os.Looper;
 import android.support.v4.app.ActivityCompat;
 
-import com.docutools.canvass.data.lang.PermissionRequiredException;
+import com.docutools.openweathermap.data.lang.PermissionRequiredException;
 import com.docutools.openweathermap.domain.entities.Location;
 import com.docutools.openweathermap.domain.repositories.LocationRepository;
 import com.google.android.gms.common.api.ApiException;

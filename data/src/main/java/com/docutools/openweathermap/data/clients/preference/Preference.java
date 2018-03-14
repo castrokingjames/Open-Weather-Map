@@ -1,4 +1,4 @@
-package com.docutools.canvass.data.clients.preference;
+package com.docutools.openweathermap.data.clients.preference;
 
 public interface Preference<T> {
 

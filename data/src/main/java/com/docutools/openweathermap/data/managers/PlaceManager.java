@@ -1,4 +1,4 @@
-package com.docutools.canvass.data.managers;
+package com.docutools.openweathermap.data.managers;
 
 import android.content.Context;
 import android.location.Address;

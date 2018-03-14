@@ -1,6 +1,6 @@
-package com.docutools.canvass.data.clients.network;
+package com.docutools.openweathermap.data.clients.network;
 
-import com.docutools.canvass.data.clients.network.services.WeatherService;
+import com.docutools.openweathermap.data.clients.network.services.WeatherService;
 
 import retrofit2.Retrofit;
 

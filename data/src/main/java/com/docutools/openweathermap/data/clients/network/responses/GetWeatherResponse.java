@@ -1,4 +1,4 @@
-package com.docutools.canvass.data.clients.network.responses;
+package com.docutools.openweathermap.data.clients.network.responses;
 
 import java.util.List;
 
