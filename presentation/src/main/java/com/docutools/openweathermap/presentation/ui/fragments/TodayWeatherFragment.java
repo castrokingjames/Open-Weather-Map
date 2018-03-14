@@ -1,8 +1,6 @@
 package com.docutools.openweathermap.presentation.ui.fragments;
 
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,6 +10,7 @@ import android.widget.TextView;
 
 import com.docutools.openweathermap.domain.entities.Weather;
 import com.docutools.openweathermap.domain.utils.Strings;
+import com.docutools.openweathermap.domain.utils.Temperatures;
 import com.docutools.openweathermap.presentation.R;
 
 import java.util.HashMap;
@@ -72,7 +71,7 @@ public class TodayWeatherFragment
         Weather weather = (Weather) bundle.getSerializable(Weather.class.getSimpleName());
         cityTextView.setText(weather.place.city + ", " + weather.place.code);
         descriptionTextView.setText(Strings.capitalize(weather.description));
-        temperatureTextView.setText(String.format("%.2f°", weather.temperature));
+        temperatureTextView.setText(String.format("%.2f°", Temperatures.kelvinToCelsius(weather.temperature)));
 
         if (MAP.containsKey(weather.code)) {
             int resId = MAP.get(weather.code);

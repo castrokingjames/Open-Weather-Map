@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.docutools.openweathermap.domain.entities.Weather;
+import com.docutools.openweathermap.domain.utils.Temperatures;
 import com.docutools.openweathermap.presentation.R;
 
 public class WeatherDetailFragment
@@ -36,7 +37,7 @@ public class WeatherDetailFragment
     public void show() {
         Bundle bundle = getArguments();
         Weather weather = (Weather) bundle.getSerializable(Weather.class.getSimpleName());
-        feelsLikeTextView.setText(String.format("%.2f°", weather.temperature));
+        feelsLikeTextView.setText(String.format("%.2f°", Temperatures.kelvinToCelsius(weather.temperature)));
         chanceOfRainTextView.setText(weather.cloud + "%");
         windTextView.setText(weather.wind + " kph");
         humidityTextView.setText(weather.humidity + "%");
